@@ -69,6 +69,10 @@ const IndexPage = () => (
         </Column>
       </Columns>
     </Section>
+    <Section>
+      <p>Thank you for visiting my site. Don't forget to shoot me a message at <br /><a href="mailto:benwasilewski@gmail.com">benwasilewski at gmail dot com</a></p>
+      <p>This site was last updated on Sunday, April 19th, 2020. It was built with Gatsby.</p>
+    </Section>
   </Layout>
 )
 
