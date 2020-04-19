@@ -26,7 +26,7 @@ $link-hover: $true-white;
 
 html {
   background-color: $primary;
-  height: calc(100% - 20px);
+  min-height: calc(100% - 20px);
 }
 
 body {
@@ -35,3 +35,6 @@ body {
   background-color: $background;
 }
 
+#main {
+  max-width: 760px;
+}

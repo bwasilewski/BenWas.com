@@ -32,11 +32,9 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <main>
+      <main id="main">
         {children}
       </main>
-
-      <Foot /> 
     </div>
   )
 }
