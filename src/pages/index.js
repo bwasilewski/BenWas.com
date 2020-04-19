@@ -26,9 +26,9 @@ const IndexPage = () => (
         <ul>
           <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
           <BreadcrumbItem><Link to="/about">About</Link></BreadcrumbItem>
-          <BreadcrumbItem><Link to="https://github.com/bwasilewski">Code Samples</Link></BreadcrumbItem>
+          <BreadcrumbItem><a target="_blank" to="https://github.com/bwasilewski">Code Samples</a></BreadcrumbItem>
           <BreadcrumbItem><Link to="/">Projects</Link></BreadcrumbItem>
-          <BreadcrumbItem><Link to="https://www.linkedin.com/in/benwasilewski">LinkedIn</Link></BreadcrumbItem>
+          <BreadcrumbItem><a target="_blank" href="https://www.linkedin.com/in/benwasilewski">LinkedIn</a></BreadcrumbItem>
         </ul>
       </Breadcrumb>
 
