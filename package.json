@@ -5,6 +5,8 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bloomer": "^0.6.5",
+    "bulma": "^0.8.2",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.3.3",
@@ -19,6 +21,8 @@
     "react-helmet": "^6.0.0"
   },
   "devDependencies": {
+    "gatsby-plugin-sass": "^2.2.3",
+    "node-sass": "^4.13.1",
     "prettier": "2.0.4"
   },
   "keywords": [

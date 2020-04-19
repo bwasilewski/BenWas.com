@@ -1,0 +1,37 @@
+/* Colors */
+$white: #c9cacc;
+$true-white: #ffffff;
+$background: #1d1f21;
+$primary: #2bbc8a;
+$scheme-main: $background;
+
+/* Derived Variables */
+$body-background-color: $background;
+$footer-background-color: $background;
+$body-color: $white;
+$footer-color: $white;
+$text: $white;
+$title-color: $primary;
+$link: $primary;
+$link-hover: $true-white;
+
+@import "node_modules/bulma/sass/utilities/_all";
+@import "node_modules/bulma/sass/base/_all";
+@import "node_modules/bulma/sass/elements/_all";
+@import "node_modules/bulma/sass/grid/_all";
+@import "node_modules/bulma/sass/form/_all";
+@import "node_modules/bulma/sass/components/_all";
+@import "node_modules/bulma/sass/layout/_all";
+
+
+html {
+  background-color: $primary;
+  height: calc(100% - 20px);
+}
+
+body {
+  height: 100%;
+  margin: 10px;
+  background-color: $background;
+}
+
