@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import BreadNav from '../components/breadnav'
+import PageHeader from '../components/pageheader'
+import Footer from '../components/footer'
 import {
   Columns,
   Column,
@@ -16,13 +17,10 @@ import {
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    
+    <PageHeader title="Ben Wasilewski" subtitle="Web Application Developer" />
 
     <Section>
-      <Title isSize="1">Ben Wasilewski</Title>
-      <Subtitle isSize="2">Web Application Developer</Subtitle>
-
-      <BreadNav />      
-
       <p>Hello! My name is Ben and I build web applications. I'm currently located in Burlington, Wisconsin. I haved worked onsite and remotely for companies in Chicago, New York, and Los Angeles.</p>
     </Section>
 
@@ -59,10 +57,8 @@ const IndexPage = () => (
         </Column>
       </Columns>
     </Section>
-    <Section>
-      <p>Thank you for visiting my site. Don't forget to shoot me a message at <br /><a href="mailto:benwasilewski@gmail.com">benwasilewski at gmail dot com</a></p>
-      <p>This site was last updated on Sunday, April 19th, 2020. It was built with Gatsby.</p>
-    </Section>
+
+    <Footer />
   </Layout>
 )
 
