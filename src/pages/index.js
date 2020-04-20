@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import BreadNav from '../components/breadnav'
 import {
   Columns,
   Column,
@@ -10,8 +11,6 @@ import {
   Section,
   Subtitle,
   Title,
-  Breadcrumb,
-  BreadcrumbItem
 } from 'bloomer'
 
 const IndexPage = () => (
@@ -22,16 +21,7 @@ const IndexPage = () => (
       <Title isSize="1">Ben Wasilewski</Title>
       <Subtitle isSize="2">Web Application Developer</Subtitle>
 
-      <Breadcrumb>
-        <ul>
-          <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
-          <BreadcrumbItem><Link to="/about">About</Link></BreadcrumbItem>
-          <BreadcrumbItem><a target="_blank" to="https://github.com/bwasilewski">Code Samples</a></BreadcrumbItem>
-          <BreadcrumbItem><Link to="/">Projects</Link></BreadcrumbItem>
-          <BreadcrumbItem><a target="_blank" href="https://www.linkedin.com/in/benwasilewski">LinkedIn</a></BreadcrumbItem>
-        </ul>
-      </Breadcrumb>
-
+      <BreadNav />      
 
       <p>Hello! My name is Ben and I build web applications. I'm currently located in Burlington, Wisconsin. I haved worked onsite and remotely for companies in Chicago, New York, and Los Angeles.</p>
     </Section>
@@ -39,7 +29,7 @@ const IndexPage = () => (
     <Section>
       <Columns>
         <Column>
-          <Title isSize="5">Specialties</Title>
+          <Title className="has-underline" isSize="5">Specialties</Title>
           <ul>
             <li>JavaScript (ES5 → ES9)</li>
             <li>React</li>
@@ -49,7 +39,7 @@ const IndexPage = () => (
         </Column>
 
         <Column>
-          <Title isSize="5">Proficiencies</Title>
+          <Title className="has-underline" isSize="5">Proficiencies</Title>
           <ul>
             <li>Backbone.js</li>
             <li>WordPress</li>
@@ -59,10 +49,10 @@ const IndexPage = () => (
         </Column>
 
         <Column>
-          <Title isSize="5">Projects</Title>
+          <Title className="has-underline" isSize="5">Projects</Title>
           <ul>
-            <li>HTPC</li>
             <li>CovidCases.io</li>
+            <li>HTPC</li>
             <li>DotFiles</li>
             <li>ThemeBase</li>
           </ul>
