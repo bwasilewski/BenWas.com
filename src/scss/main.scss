@@ -15,6 +15,10 @@ $title-color: $primary;
 $link: $primary;
 $link-hover: $true-white;
 
+$section-padding: 3.5rem 1.5rem;
+$title-line-height: 2.5rem;
+$subtitle-line-height: 2.125rem;
+
 @import "node_modules/bulma/sass/utilities/_all";
 @import "node_modules/bulma/sass/base/_all";
 @import "node_modules/bulma/sass/elements/_all";
@@ -41,4 +45,16 @@ body {
 
 .has-underline {
   text-decoration: underline;
+}
+
+.section + .section {
+  padding-top: 0;
+}
+
+.title.is-5 {
+  line-height: 1.5rem;
+}
+
+.title.is-1 + .subtitle.is-2 {
+  margin-top: -.75rem;
 }
