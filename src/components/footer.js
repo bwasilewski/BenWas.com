@@ -1,16 +1,14 @@
 import React from 'react'
 import Navigation from './navigation'
 import {
-  Footer,
-  Content
+  Section
 } from 'bloomer'
 
 const Foot = () => {
   return (
-    <Footer>
-      <Content>
-      </Content>
-    </Footer>  
+    <Section>
+      <p>Thanks for visiting! This site was last updated on Sunday, April 19th, 2020.</p>
+    </Section>
   )
 }
 
