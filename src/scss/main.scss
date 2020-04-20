@@ -40,11 +40,21 @@ body {
 }
 
 #main {
-  max-width: 760px;
+  max-width: 960px;
 }
 
 .has-underline {
   text-decoration: underline;
+}
+
+.section {
+  p {
+    margin-bottom: 1rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .section + .section {
@@ -57,4 +67,20 @@ body {
 
 .title.is-1 + .subtitle.is-2 {
   margin-top: -.75rem;
+}
+
+#content {
+  em {
+    color: $primary;
+  }
+  p {
+    padding-right: 40px;
+  }
+}
+
+li {
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
 }

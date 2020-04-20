@@ -20,8 +20,9 @@ const IndexPage = () => (
     
     <PageHeader title="Ben Wasilewski" subtitle="Web Application Developer" />
 
-    <Section>
-      <p>Hello! My name is Ben and I build web applications. I'm currently located in Burlington, Wisconsin. I haved worked onsite and remotely for companies in Chicago, New York, and Los Angeles.</p>
+    <Section> <p>Hello! My name is Ben and I build web applications with JavaScript. I'm
+      currently located in Burlington, Wisconsin. I have worked onsite and
+      remotely for companies in Chicago, New York, and Los Angeles.</p>
     </Section>
 
     <Section>
@@ -32,7 +33,8 @@ const IndexPage = () => (
             <li>JavaScript (ES5 → ES9)</li>
             <li>React</li>
             <li>Node.js</li>
-            <li>Python</li>
+            <li>Git</li>
+            <li>Bash</li>
           </ul>
         </Column>
 
@@ -40,6 +42,7 @@ const IndexPage = () => (
           <Title className="has-underline" isSize="5">Proficiencies</Title>
           <ul>
             <li>Backbone.js</li>
+            <li>Python</li>
             <li>WordPress</li>
             <li>Linux</li>
             <li>Guitar</li>
@@ -49,10 +52,11 @@ const IndexPage = () => (
         <Column>
           <Title className="has-underline" isSize="5">Projects</Title>
           <ul>
-            <li>CovidCases.io</li>
-            <li>HTPC</li>
-            <li>DotFiles</li>
-            <li>ThemeBase</li>
+            <li><a href="https://covidcases.io">CovidCases.io</a></li>
+            <li><a href="https://github.com/bwasilewski/StartPage">StartPage</a></li>
+            <li><a href="https://github.com/bwasilewski/gas-generator">Site Generator</a></li>
+            <li><a href="https://github.com/bwasilewski/Euler-Problems">Euler Problems</a></li>
+            <li><a href="https://github.com/bwasilewski/ThemeBase" target="_blank">ThemeBase</a></li>
           </ul>
         </Column>
       </Columns>

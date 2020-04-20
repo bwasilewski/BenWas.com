@@ -11,8 +11,7 @@ const PageHeader = props => {
   return (
     <Section>
       <Title isSpaced isSize="1">{ title }</Title>
-      <Subtitle isSize="2">{ subtitle }</Subtitle>
-
+      <Subtitle isSize="3">{ subtitle }</Subtitle>
       <BreadNav />
     </Section> 
   )
