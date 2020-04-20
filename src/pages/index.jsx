@@ -28,28 +28,6 @@ const IndexPage = () => (
     <Section>
       <Columns>
         <Column>
-          <Title className="has-underline" isSize="5">Specialties</Title>
-          <ul>
-            <li>JavaScript (ES5 → ES9)</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>Git</li>
-            <li>Bash</li>
-          </ul>
-        </Column>
-
-        <Column>
-          <Title className="has-underline" isSize="5">Proficiencies</Title>
-          <ul>
-            <li>Backbone.js</li>
-            <li>Python</li>
-            <li>WordPress</li>
-            <li>Linux</li>
-            <li>Guitar</li>
-          </ul> 
-        </Column>
-
-        <Column>
           <Title className="has-underline" isSize="5">Projects</Title>
           <ul>
             <li><a href="https://covidcases.io">CovidCases.io</a></li>
@@ -57,6 +35,45 @@ const IndexPage = () => (
             <li><a href="https://github.com/bwasilewski/gas-generator">Site Generator</a></li>
             <li><a href="https://github.com/bwasilewski/Euler-Problems">Euler Problems</a></li>
             <li><a href="https://github.com/bwasilewski/ThemeBase" target="_blank">ThemeBase</a></li>
+          </ul>
+        </Column>
+        <Column>
+          <Title className="has-underline" isSize="5">Specialties</Title>
+          <ul>
+            <li>JavaScript (ES5 → ES9)</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git</li>
+            <li>Guitar</li>
+            <li>White Chicken Chili</li>
+          </ul>
+        </Column>
+        <Column>
+          <Title className="has-underline" isSize="5">Proficiencies</Title>
+          <ul>
+            <li>Backbone.js</li>
+            <li>Python</li>
+            <li>Docker</li>
+            <li>WordPress</li>
+            <li>Linux<small> - check out my <a href="https://github.com/bwasilewski/DotFiles">DotFiles</a></small></li>
+            <li>Heroku</li>
+          </ul> 
+        </Column>
+        <Column>
+          <Title className="has-underline" isSize="5">Learning</Title>
+          <ul>
+            <li>VIM</li>
+            <li>GraphQL</li>
+            <li>Gardening</li>
+          </ul>
+        </Column>
+      </Columns>
+      <Columns>
+        <Column>
+          <Title className="has-underline" isSize="5">Presentations</Title>
+          <ul>
+            <li><a href="https://github.com/bwasilewski/SassBEM">Discussing a standardized naming convention for Sass projects</a></li>
+            <li><a href="https://github.com/bwasilewski/Grunt-Presentation">A Better Workflow with Grunt</a></li>
           </ul>
         </Column>
       </Columns>
