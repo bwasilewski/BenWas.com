@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
-import BreadNav from '../components/breadnav'
 import PageHeader from '../components/pageheader'
 import Footer from '../components/footer'
 import {
   Section,
   Title,
-  Subtitle,
   Column,
   Columns,
 } from 'bloomer'

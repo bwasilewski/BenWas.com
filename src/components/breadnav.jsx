@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
+import OutsideLink from './outsidelink'
 import {
   Breadcrumb,
   BreadcrumbItem
@@ -11,9 +12,9 @@ const BreadNav = () => {
       <ul>
         <BreadcrumbItem><Link to="/"><b>Home</b></Link></BreadcrumbItem>
         <BreadcrumbItem><Link to="/about"><b>About</b></Link></BreadcrumbItem>
-        <BreadcrumbItem><a target="_blank" href="https://github.com/bwasilewski"><b>Code Samples</b></a></BreadcrumbItem>
-        <BreadcrumbItem><a target="_blank" href="https://www.linkedin.com/in/benwasilewski"><b>LinkedIn</b></a></BreadcrumbItem>
-        <BreadcrumbItem><a target="_blank" href="https://www.goodreads.com/user/show/9449570-ben-wasilewski"><b>GoodReads</b></a></BreadcrumbItem>
+        <BreadcrumbItem><OutsideLink href="https://github.com/bwasilewski"><b>Code Samples</b></OutsideLink></BreadcrumbItem>
+        <BreadcrumbItem><OutsideLink href="https://www.linkedin.com/in/benwasilewski"><b>LinkedIn</b></OutsideLink></BreadcrumbItem>
+        <BreadcrumbItem><OutsideLink href="https://www.goodreads.com/user/show/9449570-ben-wasilewski"><b>GoodReads</b></OutsideLink></BreadcrumbItem>
       </ul>
     </Breadcrumb>
   )

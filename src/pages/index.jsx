@@ -1,18 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BreadNav from '../components/breadnav'
 import PageHeader from '../components/pageheader'
 import Footer from '../components/footer'
+import OutsideLink from '../components/outsidelink'
 import {
   Columns,
   Column,
-  Container,
   Section,
-  Subtitle,
   Title,
 } from 'bloomer'
+
+
 
 const IndexPage = () => (
   <Layout>
@@ -30,11 +29,11 @@ const IndexPage = () => (
         <Column>
           <Title className="has-underline" isSize="5">Projects</Title>
           <ul>
-            <li><a href="https://github.com/bwasilewski/CovidCases.io" target="_blank">CovidCases.io</a></li>
-            <li><a href="https://github.com/bwasilewski/StartPage" target="_blank">StartPage</a></li>
-            <li><a href="https://github.com/bwasilewski/gas-generator" target="_blank">Site Generator</a></li>
-            <li><a href="https://github.com/bwasilewski/Euler-Problems" target="_blank">Euler Problems</a></li>
-            <li><a href="https://github.com/bwasilewski/ThemeBase" target="_blank">ThemeBase</a></li>
+            <li><OutsideLink href="https://github.com/bwasilewski/CovidCases.io">CovidCases.io</OutsideLink></li>
+            <li><OutsideLink href="https://github.com/bwasilewski/StartPage">StartPage</OutsideLink></li>
+            <li><OutsideLink href="https://github.com/bwasilewski/gas-generator">Site Generator</OutsideLink></li>
+            <li><OutsideLink href="https://github.com/bwasilewski/Euler-Problems">Euler Problems</OutsideLink></li>
+            <li><OutsideLink href="https://github.com/bwasilewski/ThemeBase">ThemeBase</OutsideLink></li>
           </ul>
         </Column>
         <Column>
