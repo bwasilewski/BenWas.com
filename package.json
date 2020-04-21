@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "benwas.com",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ben Wasilewski <benwasilewski@gmail.com>",
   "dependencies": {
     "bloomer": "^0.6.5",
     "bulma": "^0.8.2",
