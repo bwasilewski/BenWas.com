@@ -50,7 +50,17 @@ const AboutPage = () => {
             </Section>
 
             <Section className="remove-padding-x">
-              <Title isSize="4">2005-2008</Title>
+              <Title isSize="4">1986</Title>
+              <ul>
+                <li>→ The 4th reactor at Chernobyl Nuclear Power Station explodes</li>
+                <li>→ The Space Shuttle Challenger disintegrates mid-air, killing all of its passengers</li>
+                <li>→ The Oprah Winfrey Show is broadcast nationally for the first time</li>
+                <li>→ I am born</li>
+              </ul>
+            </Section>
+
+            <Section className="remove-padding-x">
+              <Title isSize="4">2005</Title>
               <p>I studied Interactive Arts and Media at <em>Columbia College Chicago</em> from 2005 to 2008, where I received my Bachelor of Arts. Before that I spent a year at the <em>University of Illinois</em> in Champaign, but it wasn't really my style. At Columbia I learned about many different subjects including introductory programming, graphic and user interface design, animation, 3D modeling and audio engineering.</p>
               <p>While studying, I maintained a small number of websites for friends and family and participated in an internship with a local development and marketing company. Before graduation I lined up my first full time job at a local design agency where I worked on many different projects. It was here that I became a bit of a <em>jQuery</em> Evangelist. Back in these days, I spent at least 30% of my time working with <em>Flash</em> and <em>ActionScript</em>. We used <em>SVN</em> - begrudgingly. I also became involved in the local music scene where I formed a punk band with a close friend from College, playing a number of clubs in the area.</p>
             </Section>
