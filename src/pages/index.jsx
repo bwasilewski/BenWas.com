@@ -54,7 +54,7 @@ const IndexPage = () => (
             <li>Python</li>
             <li>Docker</li>
             <li>WordPress</li>
-            <li>Linux<small> - check out my <a href="https://github.com/bwasilewski/DotFiles">DotFiles</a></small></li>
+            <li>Linux<small> - check out my <OutsideLink href="https://github.com/bwasilewski/DotFiles">DotFiles</OutsideLink></small></li>
             <li>Heroku</li>
           </ul> 
         </Column>
