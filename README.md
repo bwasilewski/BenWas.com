@@ -2,7 +2,7 @@
 
 This project was built with Gatsby
 
-How to Update:
+## How to Update:
 
 1. Make your changes
 2. run `yarn build` to create a production-ready build
@@ -12,9 +12,7 @@ How to Update:
 
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+##  Gatsby's default starter
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
