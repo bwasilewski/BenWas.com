@@ -10,7 +10,7 @@ This project was built with Gatsby
 
 
 
-
+<p><small>The following is auto-generated content from Gatsby</small></p>
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 ##  Gatsby's default starter
 
