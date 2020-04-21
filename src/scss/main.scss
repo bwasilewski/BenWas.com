@@ -78,3 +78,9 @@ li {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+.buzz-word-wrap {
+  @media screen and(max-width: 959px) {
+    padding-top: 0;
+  }
+}
