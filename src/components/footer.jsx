@@ -7,7 +7,7 @@ import {
 const Foot = () => {
   return (
     <Section>
-      <p>Thanks for visiting! This site was last updated on Sunday, April 19th, 2020.</p>
+      <p>Thanks for visiting! This site was last updated on Tuesday, April 21st, 2020.</p>
     </Section>
   )
 }
