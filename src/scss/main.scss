@@ -53,9 +53,13 @@ body {
   em {
     color: $primary;
   }
-  p {
-    padding-right: 40px;
+
+  @media screen and(min-width: 960px) {
+    p {
+      padding-right: 40px;
+    }
   }
+  
 }
 
 li {
