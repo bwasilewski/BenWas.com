@@ -80,7 +80,7 @@ const AboutPage = () => {
             </Section>
           </Column>
           <Column>
-            <Section>
+            <Section className="buzz-word-wrap remove-padding-x">
               <Title isSize="4">Buzz Words</Title>
               <ul id="buzz-words"></ul>
             </Section>
