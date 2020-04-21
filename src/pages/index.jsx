@@ -30,10 +30,10 @@ const IndexPage = () => (
         <Column>
           <Title className="has-underline" isSize="5">Projects</Title>
           <ul>
-            <li><a href="https://covidcases.io">CovidCases.io</a></li>
-            <li><a href="https://github.com/bwasilewski/StartPage">StartPage</a></li>
-            <li><a href="https://github.com/bwasilewski/gas-generator">Site Generator</a></li>
-            <li><a href="https://github.com/bwasilewski/Euler-Problems">Euler Problems</a></li>
+            <li><a href="https://github.com/bwasilewski/CovidCases.io" target="_blank">CovidCases.io</a></li>
+            <li><a href="https://github.com/bwasilewski/StartPage" target="_blank">StartPage</a></li>
+            <li><a href="https://github.com/bwasilewski/gas-generator" target="_blank">Site Generator</a></li>
+            <li><a href="https://github.com/bwasilewski/Euler-Problems" target="_blank">Euler Problems</a></li>
             <li><a href="https://github.com/bwasilewski/ThemeBase" target="_blank">ThemeBase</a></li>
           </ul>
         </Column>
