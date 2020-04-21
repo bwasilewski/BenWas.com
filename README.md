@@ -4,7 +4,7 @@ How to Update:
 
 1. Make your changes
 2. run `yarn build` to create a production-ready build
-3. Run `yarn deploy` to deploy the project using (Surge)[surge.sh] 
+3. Run `yarn deploy` to deploy the project using [Surge](surge.sh) 
 
 
 
