@@ -12,6 +12,7 @@ const BreadNav = () => {
       <ul>
         <BreadcrumbItem><Link to="/"><b>Home</b></Link></BreadcrumbItem>
         <BreadcrumbItem><Link to="/about"><b>About</b></Link></BreadcrumbItem>
+        <BreadcrumbItem><Link to="/blog"><b>Blog</b></Link></BreadcrumbItem>
         <BreadcrumbItem><OutsideLink href="https://github.com/bwasilewski"><b>Code Samples</b></OutsideLink></BreadcrumbItem>
         <BreadcrumbItem><OutsideLink href="https://www.linkedin.com/in/benwasilewski"><b>LinkedIn</b></OutsideLink></BreadcrumbItem>
         <BreadcrumbItem><OutsideLink href="https://www.goodreads.com/user/show/9449570-ben-wasilewski"><b>GoodReads</b></OutsideLink></BreadcrumbItem>
