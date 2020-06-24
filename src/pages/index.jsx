@@ -12,14 +12,14 @@ import {
 } from 'bloomer'
 
 
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     
     <PageHeader title="Ben Wasilewski" subtitle="Web Application Developer" />
 
-    <Section> <p>Hello! My name is Ben and I build web applications with JavaScript. I'm
+    <Section> 
+      <p>Hello! My name is Ben and I build web applications with JavaScript. I'm
       currently located in Burlington, Wisconsin. I have worked onsite and
       remotely for companies in Chicago, New York, and Los Angeles.</p>
     </Section>
@@ -39,7 +39,6 @@ const IndexPage = () => (
         <Column>
           <Title className="has-underline" isSize="5">Specialties</Title>
           <ul>
-            <li>JavaScript (ES5 → ES9)</li>
             <li>React</li>
             <li>Node.js</li>
             <li>Git</li>
@@ -50,7 +49,6 @@ const IndexPage = () => (
         <Column>
           <Title className="has-underline" isSize="5">Proficiencies</Title>
           <ul>
-            <li>Backbone.js</li>
             <li>Python</li>
             <li>Docker</li>
             <li>WordPress</li>
