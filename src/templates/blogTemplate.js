@@ -18,6 +18,8 @@ export default function Template({
     <Layout>
       <SEO title="Tag Page" />
 
+{ console.log(data) }
+
       <PageHeader title="Ben Wasilewski" subtitle="Web Application Developer" />
     
     </Layout>
