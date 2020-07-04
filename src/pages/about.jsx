@@ -28,12 +28,11 @@ const AboutPage = () => {
       return a > b
     })
 
-    items.map(item => {
+    for (let item in items) {
       let newItem = document.createElement('li')
-      newItem.innerHTML = item
-      buzzList.appendChild(newItem) 
-    })
-
+      newItem.innerHTML = items[item]
+      buzzList.appendChild(newItem)
+    }
   }, [])
 
   return (

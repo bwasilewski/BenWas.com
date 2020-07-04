@@ -6,6 +6,7 @@ import Footer from '../../components/footer'
 import { graphql, Link } from 'gatsby'
 import {
   Section,
+  Title
 } from 'bloomer'
 
 
@@ -21,11 +22,15 @@ const BlogPage = ({ data }) => (
     <PageHeader title="Ben Wasilewski" subtitle="Blog" />
 
     <Section>
+      <Title isSize="3">Posts</Title>
       <ul>
         { data.allMarkdownRemark.nodes.map(article => <li key={article.id}><span>{article.frontmatter.date} | </span><ArticleLink data={article} /></li> )}
       </ul>
+      <Title isSize="3">Tags</Title>
+      <ul>
+        { data.allMarkdownRemark.group.map( tag => <li key={tag.id}><Link to={`/blog/${tag.tag}`}>{tag.tag}</Link></li> ) }
+      </ul>
     </Section>
-
     <Footer />
   </Layout>
 )
@@ -38,6 +43,7 @@ export const pageQuery = graphql`
         totalCount
       }
       nodes {
+        id 
         frontmatter {
           date
           slug
