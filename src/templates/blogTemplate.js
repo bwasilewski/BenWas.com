@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
+import Footer from '../components/footer'
 import PageHeader from '../components/pageheader'
 import { 
   Section,
@@ -13,8 +14,9 @@ import {
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  const { updated } = site.siteMetadata
   return (
     <Layout>
       <SEO title={frontmatter.title} />
@@ -39,6 +41,7 @@ export default function Template({
       <Section>
         <Link to="/blog">Go Back</Link>
       </Section>
+      <Footer updated={updated} />
     </Layout>
   )
 }
@@ -51,6 +54,12 @@ export const pageQuery = graphql`
         title
         date
         tags
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        updated
       }
     }
   }
