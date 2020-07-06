@@ -1,8 +1,12 @@
+const moment = require('moment')
+
 module.exports = {
   siteMetadata: {
-    title: `Ben Wasilewski | Web App Developer`,
+    title: `Ben Wasilewski`,
+    subtitle: 'Web Application Developer',
     description: `Hello! My name is Ben and I build web applications with JavaScript. I'm currently located in Burlington, Wisconsin. I have worked onsite and remotely for companies in Chicago, New York, and Los Angeles.`,
     author: `benwasilewski@gmail.com`,
+    updated: moment().format('MMMM Do, YYYY') 
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
