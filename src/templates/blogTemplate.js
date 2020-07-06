@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
 import { 
   Section,
+  Tag,
   Title,
   Subtitle,
 } from 'bloomer'
@@ -12,16 +13,32 @@ import {
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  // const { markdownRemark } = data // data.markdownRemark holds your post data
-  // const { frontmatter, html } = markdownRemark
+  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <SEO title="Tag Page" />
-
-{ console.log(data) }
+      <SEO title={frontmatter.title} />
 
       <PageHeader title="Ben Wasilewski" subtitle="Web Application Developer" />
-    
+      <Section className="blog-post-container">
+        <div className="blog-post">
+          <Title isSize={3}>{frontmatter.title}</Title>
+          <Subtitle isSize={5}>{frontmatter.date}</Subtitle>
+          { frontmatter.tags && 
+            <div className="tags">
+              { frontmatter.tags.map(tag => <Tag className="is-light" isColor="primary" key={tag}>{ tag }</Tag> )}
+            </div>
+          }
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+
+      </Section>    
+      <Section>
+        <Link to="/blog">Go Back</Link>
+      </Section>
     </Layout>
   )
 }

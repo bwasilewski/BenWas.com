@@ -4,7 +4,6 @@ import SEO from "../components/seo"
 import PageHeader from '../components/pageheader'
 import Footer from '../components/footer'
 import OutsideLink from '../components/outsidelink'
-import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import {
   Columns,
@@ -17,11 +16,10 @@ import {
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    
-    <PageHeader title="Ben Wasilewski" subtitle="Web Application Developer" />
+    <PageHeader title={data.site.siteMetadata.title}
+    subtitle={data.site.siteMetadata.subtitle} />
 
     <Section> 
-      {/* <Img fixed={data.file.childImageSharp.fixed} /> */}
       <p>Hello! My name is Ben and I build web applications with JavaScript. I'm currently located in Burlington, Wisconsin. I have worked onsite and remotely for companies in Chicago, New York, and Los Angeles.</p>
     </Section>
 
@@ -77,22 +75,21 @@ const IndexPage = ({ data }) => (
       </Columns>
     </Section>
 
-    <Footer />
+    <Footer updated={data.site.siteMetadata.updated} />
   </Layout>
 )
 
 
 export const query = graphql`
   query {
-    file(relativePath: { eq: "portrait.jpeg" }) {
-      childImageSharp {
-        # specify the image processing specs right in the query
-        # Makes it trivial to update as your page's design changes
-        fixed(width: 350, height: 350) {
-          ...GatsbyImageSharpFixed
-        }
+    site {
+      siteMetadata {
+        title
+        subtitle
+        description
+        updated
       }
-    }
+    } 
   }
 `
 export default IndexPage

@@ -3,6 +3,7 @@ import SEO from '../components/seo'
 import Layout from '../components/layout'
 import PageHeader from '../components/pageheader'
 import Footer from '../components/footer'
+import { graphql } from 'gatsby'
 import {
   Section,
   Title,
@@ -10,7 +11,7 @@ import {
   Columns,
 } from 'bloomer'
 
-const AboutPage = () => {
+const AboutPage = ({ data }) => {
   useEffect(() => {
     const content = document.getElementById('content')
     const emphasized = content.querySelectorAll('em')
@@ -38,7 +39,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEO title="About Me" />
-      <PageHeader title="Ben Wasilewski" subtitle="About Me" />
+      <PageHeader title={data.site.siteMetadata.title} subtitle="About Me" />
       <Section>
         <Columns>
           <Column id="content" isSize="3/4">
@@ -94,9 +95,20 @@ const AboutPage = () => {
           </Column>
         </Columns>
       </Section>
-      <Footer />
+      <Footer updated={data.site.siteMetadata.updated} />
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    site {
+      siteMetadata {
+        updated
+        title
+      }
+    }
+  }
+`
 
 export default AboutPage

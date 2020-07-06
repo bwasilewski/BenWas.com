@@ -37,7 +37,7 @@ const BlogPage = ({ data }) => {
           </Column>
         </Columns>
         </Section>
-      <Footer />
+      <Footer updated={data.site.siteMetadata.updated} />
     </Layout>
   )
 }
@@ -60,6 +60,12 @@ export const pageQuery = graphql`
         }
       }
     } 
+    site {
+      siteMetadata {
+        title
+        updated
+      }
+    }
   }
 `
 
