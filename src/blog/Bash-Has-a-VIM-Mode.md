@@ -1,7 +1,7 @@
 --- 
-slug: "/blog/Bash-has-a-VIM-mode" 
+slug: "/blog/Bash-Has-a-VIM-mode" 
 date: "2020-6-22" 
-title: "Bash has a VIM mode!" 
+title: "Bash Has a VIM mode!" 
 description: "One of the things I love about the terminal is that no matter how
 long you've been using it..."
 tags:
