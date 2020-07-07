@@ -32,7 +32,7 @@ const BlogPage = ({ data }) => {
           <Column>
             <Title isSize="4">Tags</Title>
               <ul>
-                { group.map( tag => <li key={tag.tag}><Link to={`/blog/${tag.tag}`}>{tag.tag}</Link></li> ) }
+                { group.map( tag => <li key={tag.tag}><Link to={`/blog/tag/${tag.tag}`}>{tag.tag}</Link></li> ) }
               </ul>
           </Column>
         </Columns>

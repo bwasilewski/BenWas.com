@@ -10,6 +10,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const blogPostTemplate = require.resolve(`./src/templates/blogTemplate.js`)
+  const tagPageTemplate = require.resolve('./src/templates/tagTemplate.js')
 
   const result = await graphql(`
     {
@@ -28,11 +29,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
+  const tagResults = await graphql(`
+    {
+      allMarkdownRemark {
+        group(field: frontmatter___tags) {
+          fieldValue 
+        }
+      }
+    }
+  `)
+
   // Handle errors
-  if (result.errors) {
+  if (result.errors || tagResults.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
+
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     let shouldRender = process.env.DEVELOPMENT === true || 
@@ -47,4 +59,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  tagResults.data.allMarkdownRemark.group.forEach( ({ fieldValue }) => {
+    createPage({
+      path: `/blog/tag/${fieldValue}`,
+      component: tagPageTemplate,
+      context: {
+        tag: fieldValue
+      }
+    })
+  })  
 }
