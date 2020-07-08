@@ -1,8 +1,8 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-//import SEO from '../components/seo'
+import { graphql, Link } from 'gatsby'
+import SEO from '../components/seo'
 import Layout from '../components/layout'
-//import Footer from '../components/footer'
+import Footer from '../components/footer'
 import PageHeader from '../components/pageheader'
 import { Location } from '@reach/router'
 import { 
@@ -15,21 +15,22 @@ export default function Template({
 }) {
   const loc = window.location.href
   const { edges } = data.allMarkdownRemark
-  let tagValue = loc.slice(loc.lastIndexOf('/') + 1)
-console.log(tagValue)
+  const { title, updated } = data.site.siteMetadata
+  let tagValue = decodeURIComponent(loc.slice(loc.lastIndexOf('/') + 1))
   return (
     <Layout>
-      <PageHeader title="Ben Wasilewski" subtitle="Web Application Developer" />
+      <PageHeader title={title} subtitle="Web Application Developer" />
       <Section className="tag-page-container">
-        <Title isSize="1">{ tagValue }</Title>
-        { edges.map(post => <div key={post.node.slug}>{post.node.frontmatter.title}</div>) }
+        <Title isSize="1">{tagValue}</Title>
+        { edges.map(post => <div key={post.node.frontmatter.slug}><Link to={post.node.frontmatter.slug}>{post.node.frontmatter.title}</Link></div>) }
       </Section>    
+      <Footer updated={updated} />
     </Layout>
   )
 }
 export const pageQuery = graphql`
-  query($fieldValue: [String]) {
-    allMarkdownRemark(filter: { frontmatter: {tags: {in: $fieldValue}}}) {
+  query($tag: [String]) {
+    allMarkdownRemark(filter: { frontmatter: {tags: {in: $tag}}}) {
       edges {
         node {
           frontmatter {
