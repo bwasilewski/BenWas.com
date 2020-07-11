@@ -1,18 +1,13 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import SEO from '../components/seo'
-import Layout from '../components/layout'
-import Footer from '../components/footer'
-import PageHeader from '../components/pageheader'
-import { 
-  Section,
-  Tag,
-  Title,
-  Subtitle,
-} from 'bloomer'
+import React from "react"
+import { Link, graphql } from "gatsby"
+import SEO from "../components/seo"
+import Layout from "../components/layout"
+import Footer from "../components/footer"
+import PageHeader from "../components/pageheader"
+import { Button, Section, Tag, Title, Subtitle } from "bloomer"
 
 export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
+  data // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
@@ -26,18 +21,23 @@ export default function Template({
         <div className="blog-post">
           <Title isSize={3}>{frontmatter.title}</Title>
           <Subtitle isSize={5}>{frontmatter.date}</Subtitle>
-          { frontmatter.tags && 
-            <div className="tags">
-              { frontmatter.tags.map(tag => <Tag className="is-light" isColor="primary" key={tag}>{ tag }</Tag> )}
+          {frontmatter.tags && (
+            <div className="buttons">
+              {frontmatter.tags.map(tag => (
+                <Link key={tag} to={`/blog/${tag}`}>
+                  <Button className="is-light is-small" isColor="primary">
+                    {tag}
+                  </Button>
+                </Link>
+              ))}
             </div>
-          }
+          )}
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </div>
-
-      </Section>    
+      </Section>
       <Section>
         <Link to="/blog">Go Back</Link>
       </Section>
