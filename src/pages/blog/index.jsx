@@ -3,6 +3,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 import PageHeader from '../../components/pageheader'
 import Footer from '../../components/footer'
+import PostList from '../../components/postlist'
 import { graphql, Link } from 'gatsby'
 import {
   Column,
@@ -25,9 +26,7 @@ const BlogPage = ({ data }) => {
         <Columns>
           <Column isSize="3/4">
             <Title isSize="3">Posts</Title>
-            <ul>
-              { nodes.map(article => <li key={article.id}><span>{article.frontmatter.date} | </span><ArticleLink data={article} /></li>)}
-            </ul>
+            <PostList posts={nodes} />
           </Column>
           <Column>
             <Title isSize="4">Tags</Title>
