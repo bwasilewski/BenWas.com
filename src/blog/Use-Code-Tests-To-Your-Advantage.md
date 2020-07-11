@@ -9,6 +9,21 @@ tags:
 - Code Tests
 ---
 
+
+Today I'd like to talk a little bit about something that I have seen grow in
+prevalance in our industry more and more over the years. With COVID-19 in
+full-swing, this topic has become only more relevant, and affected me more
+personally. What I'm talking about is Code Tests or Code Challenges,
+administered by would-be employers in order to assess the proficiency of a job
+applicant. Frankly, I think these tests are bullshit. They are disrespectful of
+the applicant's time, they fail to do the job they are created for, and they
+corrupt the interview process itself.
+
+
+
+
+
+
 Recently I had to take a couple of code tests in order to apply for a job
 (actually, I'm still in the middle of completing them). But the exercise gave me
 an idea, one that I was surprised I even came up with. You see, I loathe code
