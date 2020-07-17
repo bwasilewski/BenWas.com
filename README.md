@@ -2,6 +2,9 @@
 
 This project was built with Gatsby
 
+## Tasks
+[ ] Add follow buttons with [GitHub Buttons](https://www.npmjs.com/package/github-buttons)
+
 ## How to Update:
 
 1. Make your changes
