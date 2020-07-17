@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <PageHeader title={data.site.siteMetadata.title}
-    subtitle={data.site.siteMetadata.subtitle} />
+			subtitle={data.site.siteMetadata.subtitle} />
 
     <Section> 
       <p>Hello! My name is Ben and I build web applications with JavaScript. I'm currently located in Burlington, Wisconsin. I have worked onsite and remotely for companies in Chicago, New York, and Los Angeles.</p>
@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => (
         <Column>
           <Title className="has-underline" isSize="5">Projects</Title>
           <ul>
-            <li><OutsideLink href="https://github.com/bwasilewski/CovidCases.io">CovidCases.io</OutsideLink></li>
+            <li><OutsideLink href="https://covidcases.io">CovidCases.io</OutsideLink></li>
             <li><OutsideLink href="https://github.com/bwasilewski/StartPage">StartPage</OutsideLink></li>
             <li><OutsideLink href="https://github.com/bwasilewski/gas-generator">Site Generator</OutsideLink></li>
             <li><OutsideLink href="https://github.com/bwasilewski/Euler-Problems">Euler Problems</OutsideLink></li>
