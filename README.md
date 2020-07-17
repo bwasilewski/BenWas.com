@@ -3,7 +3,7 @@
 This project was built with Gatsby
 
 ## Tasks
-[ ] Add follow buttons with [GitHub Buttons](https://www.npmjs.com/package/github-buttons)
+* [ ] Add follow buttons with [GitHub Buttons](https://www.npmjs.com/package/github-buttons)
 
 ## How to Update:
 
