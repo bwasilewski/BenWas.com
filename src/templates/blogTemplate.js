@@ -22,13 +22,11 @@ export default function Template({
           <Title isSize={3}>{frontmatter.title}</Title>
           <Subtitle isSize={5}>{frontmatter.date}</Subtitle>
           {frontmatter.tags && (
-            <div className="buttons">
+            <div className="tags">
               {frontmatter.tags.map(tag => (
-                <Link key={tag} to={`/blog/${tag}`}>
-                  <Button className="is-light is-small" isColor="primary">
-                    {tag}
-                  </Button>
-                </Link>
+								<Tag className="is-light is-small" isColor="primary">
+									{tag}
+								</Tag>
               ))}
             </div>
           )}
